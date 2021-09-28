@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: solid blue;
+        height: 400px;
+        width: 700px;
+        margin: auto;
+        position: relative;
+    }
+    .container img{
+        height: 100%;
+        width: 100%;
+    }
+    .left{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+    }
+    .right{
+        position: absolute;
+        right: 0%;
+        top: 50%;
+    }
+</style>
+<body>
+    <div class="container" onmouseover="stop()" onmouseout="run_slide()">
+        <img src="/images/testimages/test1.jpg" alt="" id="images">
+        <button class="left" onclick="move_left()">&lt;</button>
+        <button class="right" onclick="move_right()">&gt;</button>
+    </div>
+
+    <script src="test.js">
+
+    </script>
+</body>
+</html>

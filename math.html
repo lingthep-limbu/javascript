@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math</title>
+</head>
+<body>
+    <script>
+        const pi=Math.PI
+        document.write(`${pi} <br>`)
+        document.write(`${pi.toFixed(2)} <br>`)
+
+        document.write(`${Math.sqrt(25)} <br>`)
+        document.write(`${Math.pow(2,3)}<br>`)
+
+        //random number its inbetween 0 and 1
+        let a = Math.random()
+        document.write(`${a}<br>`)
+
+        //round up
+        document.write(`${Math.round(2.5)} <br>`)
+        document.write(`${Math.round(2.3)} <br>`)
+
+        //ceil
+        document.write(`${Math.ceil(5.4)} <br>`)
+
+        //floor
+
+        document.write(`${Math.floor(5.1)} <br>`)
+
+        //conver the random a from above to whole no.
+        document.write(`${Math.ceil(a)} <br>`)
+        //convert random number to whole no.
+        document.write(`${Math.floor(Math.random()*20) + 1} <br>`)
+
+        document.write(`${Math.ceil(Math.random()*22) + 1}`)
+    </script>
+</body>
+</html>

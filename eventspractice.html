@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events practice</title>
+</head>
+<body>
+
+    <button onmouseover="hello()" onmouseout ="goodbye()">hover</button>
+    <p id="ram"></p>
+    
+
+    <script>
+        function hello(){
+            document.getElementById('ram').innerHTML="Hello my name is john"
+        }
+
+        function goodbye(){
+            document.getElementById('ram').innerHTML="good bye!"
+        }
+    </script>
+    
+</body>
+</html>

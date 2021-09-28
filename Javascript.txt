@@ -1,0 +1,15 @@
+Javascript
+
+programing language of web/scripting language
+it makes web page interactive
+
+library/framework for frontend
+React Js -> developed by facebook -> Next Js (SEO friendly)
+React Native (mobile app)
+
+frame work for backend
+express js and node js
+
+angular js
+vue js
+svelte js

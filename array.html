@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>array-> collection of homegenous object ie a variable contain multiple values</p>
+    <pre>
+        example:
+        const vegetables = ['cauliflower', 'cabbage', 'carrot']
+    </pre>
+    <script>
+        const fruit =['orange', 'mango', 'apple', 'banana', 'cherry']
+        document.write(`${fruit}<br>`)
+        //to access single value from an arrya
+        document.write(`${fruit[0]}<br>`)
+        //to count the length of an array
+        document.write(`${fruit.length}<br>`)
+        //to remove last array element use pop
+        fruit.pop()
+        document.write(`${fruit}<br>`)
+        //to add new array element at last use push
+        fruit.push('coconut')
+        document.write(`${fruit}<br>`)
+        //to remove first array element
+        fruit.shift()
+        document.write(`${fruit}<br>`)
+        //to add new element at firsr position in array
+        fruit.unshift('papaya')
+        document.write(`${fruit}<br>`)
+        //splice to add multiple elemenets in an array
+        fruit.splice(2,0, 'kiwi', 'dragonfruit')
+        //here 2 is a podition where new elements is added from
+        //0 means no any array element is removed
+        document.write(`${fruit} <br>`)
+
+        //to remove multiple elements from an aray
+        fruit.splice(3,2)
+        //here 2 means 2 elemens are removed from position 3
+        document.write(`${fruit}<br>`)
+
+        //slice to divide arrays in 2 parts
+        const fresh =fruit.slice(0,3)
+        document.write(`${fresh} <br>`)
+        
+        
+
+
+    </script>
+</body>
+</html>

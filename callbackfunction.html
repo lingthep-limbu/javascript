@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback function</title>
+</head>
+<body>
+    <div>
+
+    </div>
+
+    <script>
+        const news =[
+            {newsTitle: "Firs TItle", content: " this is javascript"},
+            {newsTitle: "Second title", content: "this is callback function topic"},
+            {newsTitle: "Third title", content: "hello world"}
+        ]
+        //define the dunction showNews
+        const showNews=()=>{
+            setTimeout(()=>{
+                let result =""
+                news.forEach((post)=>{
+                    result+=`<li>${post.newsTitle}</li>`
+                })
+                document.querySelector('div').innerHTML=result
+            },2000)
+        }
+
+        //call the function shownews
+        // showNews()
+
+        //define the function addNews
+
+        // const addNews = (newdata)=>{
+        //     setTimeout(()=>{
+        //         //to add data to array
+        //         news.push(newdata)
+        //     },3000)
+        // }
+
+        // //call the function addNews
+        // addNews({newsTitle:"Fourth Title", content: "this is Added from push method"})
+
+        //define the function with callback function
+        const addNews=(newdata, callback)=>{
+            setTimeout(()=>{
+                news.push(newdata)
+                 //call the callback function after adding new data
+                callback()
+
+            }, 3000)
+           
+
+        }
+
+        //call the function addNews with callback function showNews 
+        addNews({newsTitle:"Fourth Title", content: "this is Added from push method"}, showNews)
+    </script>
+</body>
+</html>

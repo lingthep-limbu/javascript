@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const x=Number(prompt(`Enter a first number`))
+        const y= Number(prompt(`enter a second number`))
+        const operator=(prompt(`tell me what to do? eg: +,  -, *,/,%`))
+        switch(operator){
+            case "+":
+                const a=x+y
+                document.write(`the addition is ${a}`)
+                break
+
+            case "-":
+                const b =x-y
+                document.write(`the subtraction is ${b}`)
+                break
+
+            case "*":
+                const c = x*y
+                document.write(`the multiplication is ${c}`)
+                break
+
+            case "/":
+                const d = x/y
+                document.write(`the division is ${d}`)
+                break
+
+            case "%":
+                const e = x % y
+                document.write(`the remainder is ${e}`)
+                break
+
+            default:
+                document.write(`invalid operator`)
+        }
+    </script>
+</body>
+</html>

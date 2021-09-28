@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numeber</title>
+</head>
+<body>
+    <script>
+        const a= 20.3456
+        //use to fix method to show how manyjnumbers to be printed after decimal point
+
+        document.write(`${a.toFixed(2)}<br>`)
+        //use toPrecision method to show how many numbers to be printed as a whoole
+
+        document.write(`${a.toPrecision(3)} <br>`)
+
+        //to convert string to numbers
+        //Number()
+        //parseInt()2
+        //parseFloat()2.35
+
+        const b="35"
+        const c =Number(b)
+        document.write(`<br>`)
+
+        document.write(typeof(c))
+        document.write(`<br>`)
+
+        document.write(typeof(b))
+
+        const d =Number("hello")
+        document.write(`<br>`)
+        document.write(`${d} <br>`)
+
+        document.write(parseInt("20.3445"))
+
+    </script>
+</body>
+</html>
