@@ -1,0 +1,20 @@
+regular expressions
+^ -> it checks from the begining
+$ -> it checks from the end
+/.../ -> regular expression goes inside this
+[a-z] -> it checks only lower case alphabhet from a to z
+[A-Z] -> it checks only upper case alphabet from a to z
+[0-9] -> it checks number only
+[a-z A-Z -> it checks both upper and lower case alphabets
+[a-z0-9] -> it checks both loweercase alphabets and numbers
+
+{min_value, max_value} -> example {2, 10}
+
+for special characters use \
+example \@, \$, \# \s(space), \d(digits) etc
+
+?= -> it means position doesnot matter in teh string
+
+. -> matches single character
+
+* -> matches precendence characters
